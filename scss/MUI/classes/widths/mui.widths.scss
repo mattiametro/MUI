@@ -110,3 +110,11 @@
 @include media-query(handheld){
     @include widths("handheld-");
 }
+
+@include media-query(to-laptop){
+    @include widths("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include widths("to-tablet-");
+}

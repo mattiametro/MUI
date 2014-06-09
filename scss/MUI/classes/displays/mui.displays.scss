@@ -1,0 +1,79 @@
+// DISPLAYS
+
+@mixin displays($namespace: "") {
+    
+// display block
+    
+.#{$namespace}block {
+    display: block;
+}
+    
+.#{$namespace}inline {
+    display: inline;
+}
+
+.#{$namespace}inline-block {
+    display: inline-block;
+}
+    
+.#{$namespace}hidden {
+    display: none;
+}
+    
+.#{$namespace}superhidden {
+    display: none !important;
+}
+
+.#{$namespace}table {
+    display: table;
+}
+    
+.#{$namespace}table-row {
+    display: table-row;
+}
+
+.#{$namespace}table-cell {
+    display: table-cell;
+}
+    
+.#{$namespace}table-column {
+    display: table-column;
+}
+    
+.#{$namespace}table-row-group {
+    display: table-row-group;
+} 
+    
+.#{$namespace}table-caption {
+    display: table-caption;
+}  
+    
+
+}
+
+@include displays();
+
+
+@include media-query(fullscreen){
+    @include displays("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include displays("laptop-");
+}
+
+@include media-query(tablet){
+    @include displays("tablet-");
+}
+
+@include media-query(handheld){
+    @include displays("handheld-");
+}
+
+@include media-query(to-laptop){
+    @include displays("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include displays("to-tablet-");
+}

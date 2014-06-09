@@ -19,20 +19,35 @@
 
 // @include media-query(palm){ [styles here] }
 
+$fullscreen-start: $laptop + 1px;
+$laptop-start:     $tablet + 1px;
+$tablet-start:     $handheld + 1px;
+
+
 @mixin media-query($media-query) {
     @if $media-query == fullscreen {
-        @media only screen and (max-width:$fullscreen) { @content; }
+        @media only screen and (min-width:$fullscreen-start) { @content; }
     }
 
     @if $media-query == laptop {
-        @media only screen and (max-width:$laptop) { @content; }
+        @media only screen and (min-width:$laptop-start) and (max-width:$laptop) { @content; }
     }
     
     @if $media-query == tablet {
-        @media only screen and (max-width:$tablet) { @content; }
+        @media only screen and (min-width:$tablet-start) and (max-width:$tablet) { @content; }
     }
     
     @if $media-query == handheld {
         @media only screen and (max-width:$handheld) { @content; }
-    }    
+    }  
+    
+    
+    @if $media-query == to-laptop {
+        @media only screen and (max-width:$laptop) { @content; }
+    }
+    
+    @if $media-query == to-tablet {
+        @media only screen and (max-width:$tablet) { @content; }
+    }
+    
 }

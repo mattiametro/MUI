@@ -156,3 +156,11 @@
 @include media-query(handheld){
     @include margins("handheld-");
 }
+
+@include media-query(to-laptop){
+    @include margins("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include margins("to-tablet-");
+}
