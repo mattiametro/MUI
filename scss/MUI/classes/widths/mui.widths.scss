@@ -1,0 +1,112 @@
+// subwidths
+
+@mixin widths($namespace: "") {
+.#{$namespace}whole {
+    width: $whole;
+}
+    
+.#{$namespace}superwhole {
+    width: $whole !important;
+}
+
+.#{$namespace}half {
+    width: $whole / 2;
+}
+    
+.#{$namespace}superhalf {
+    width: $whole / 2 !important;
+}
+
+.#{$namespace}third {
+    width: $whole / 3;
+}
+
+.#{$namespace}quarter {
+    width: $whole / 4;
+}
+
+.#{$namespace}fifth {
+    width: $whole / 5;
+}
+
+.#{$namespace}sixth {
+    width: $whole / 6;
+}
+   
+// widths
+
+.#{$namespace}whole-95 {
+    width: 95%;
+} 
+    
+.#{$namespace}whole-90 {
+    width: 90%;
+}    
+    
+.#{$namespace}whole-85 {
+    width: 80%;
+}
+    
+.#{$namespace}whole-80 {
+    width: 80%;
+}
+
+.#{$namespace}whole-75 {
+    width: 75%;
+}
+
+.#{$namespace}whole-70 {
+    width: 70%;
+}
+
+.#{$namespace}whole-60 {
+    width: 60%;
+}
+
+.#{$namespace}whole-50 {
+    width: 50%;
+}
+    
+.#{$namespace}whole-40 {
+    width: 40%;
+}
+
+.#{$namespace}whole-30 {
+    width: 30%;
+}
+    
+.#{$namespace}whole-20 {
+    width: 20%;
+}
+
+.#{$namespace}whole-15 {
+    width: 15%;
+}
+    
+.#{$namespace}whole-10 {
+    width: 10%;
+}
+
+.#{$namespace}whole-5 {
+    width: 5%;
+}
+}
+
+@include widths();
+
+
+@include media-query(fullscreen){
+    @include widths("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include widths("laptop-");
+}
+
+@include media-query(tablet){
+    @include widths("tablet-");
+}
+
+@include media-query(handheld){
+    @include widths("handheld-");
+}

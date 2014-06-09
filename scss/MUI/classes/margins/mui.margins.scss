@@ -1,0 +1,158 @@
+// MARGINS
+
+@mixin margins($namespace: "") {
+    
+// margin T R B L    
+    
+.#{$namespace}margin-double {
+    margin: $margin * 2;
+}
+    
+.#{$namespace}margin-half {
+    margin: $margin / 2;
+}
+
+.#{$namespace}margin {
+    margin: $margin;
+}
+    
+.#{$namespace}margin-clean {
+    margin: 0 !important;
+}
+
+// margin V
+    
+.#{$namespace}margin-v-double {
+    margin-top: $margin * 2;
+    margin-bottom: $margin * 2;    
+}
+    
+.#{$namespace}margin-v-half {
+    margin-top: $margin / 2;
+    margin-bottom: $margin / 2;    
+}
+
+.#{$namespace}margin-v {
+    margin-top: $margin;
+    margin-bottom: $margin;    
+}
+    
+.#{$namespace}margin-v-clean {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;    
+}  
+    
+// margin H
+    
+.#{$namespace}margin-h-double {
+    margin-left: $margin * 2;
+    margin-right: $margin * 2;    
+}
+    
+.#{$namespace}margin-h-half {
+    margin-left: $margin / 2;
+    margin-right: $margin / 2;    
+}
+
+.#{$namespace}margin-h {
+    margin-left: $margin;
+    margin-right: $margin;    
+}
+    
+.#{$namespace}margin-h-clean {
+    margin-left: 0 !important;
+    margin-right: 0 !important;    
+}     
+   
+// margin L
+    
+.#{$namespace}margin-left-double {
+    margin-left: $margin * 2;    
+}
+    
+.#{$namespace}margin-left-half {
+    margin-left: $margin / 2;   
+}
+
+.#{$namespace}margin-left {
+    margin-left: $margin;    
+}
+    
+.#{$namespace}margin-left-clean {
+    margin-left: 0 !important;    
+}    
+ 
+// margin R
+    
+.#{$namespace}margin-right-double {
+    margin-right: $margin * 2;    
+}
+    
+.#{$namespace}margin-right-half {
+    margin-right: $margin / 2;   
+}
+
+.#{$namespace}margin-right {
+    margin-right: $margin;    
+}
+    
+.#{$namespace}margin-right-clean {
+    margin-right: 0 !important;    
+}     
+    
+// margin T
+    
+.#{$namespace}margin-top-double {
+    margin-top: $margin * 2;    
+}
+    
+.#{$namespace}margin-top-half {
+    margin-top: $margin / 2;   
+}
+
+.#{$namespace}margin-top {
+    margin-top: $margin;    
+}
+    
+.#{$namespace}margin-top-clean {
+    margin-top: 0 !important;    
+} 
+    
+// margin B
+    
+.#{$namespace}margin-bottom-double {
+    margin-bottom: $margin * 2;    
+}
+    
+.#{$namespace}margin-bottom-half {
+    margin-bottom: $margin / 2;   
+}
+
+.#{$namespace}margin-bottom {
+    margin-bottom: $margin;    
+}
+    
+.#{$namespace}margin-bottom-clean {
+    margin-bottom: 0 !important;    
+}     
+    
+}
+
+@include margins();
+
+
+@include media-query(fullscreen){
+    @include margins("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include margins("laptop-");
+}
+
+@include media-query(tablet){
+    @include margins("tablet-");
+}
+
+@include media-query(handheld){
+    @include margins("handheld-");
+}

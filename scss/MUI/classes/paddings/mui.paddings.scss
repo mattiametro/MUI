@@ -1,0 +1,158 @@
+// PADDINGS
+
+@mixin paddings($namespace: "") {
+    
+// padding T R B L    
+    
+.#{$namespace}padding-double {
+    padding: $padding * 2;
+}
+    
+.#{$namespace}padding-half {
+    padding: $padding / 2;
+}
+
+.#{$namespace}padding {
+    padding: $padding;
+}
+    
+.#{$namespace}padding-clean {
+    padding: 0 !important;
+}
+
+// padding V
+    
+.#{$namespace}padding-v-double {
+    padding-top: $padding * 2;
+    padding-bottom: $padding * 2;    
+}
+    
+.#{$namespace}padding-v-half {
+    padding-top: $padding / 2;
+    padding-bottom: $padding / 2;    
+}
+
+.#{$namespace}padding-v {
+    padding-top: $padding;
+    padding-bottom: $padding;    
+}
+    
+.#{$namespace}padding-v-clean {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;    
+}  
+    
+// padding H
+    
+.#{$namespace}padding-h-double {
+    padding-left: $padding * 2;
+    padding-right: $padding * 2;    
+}
+    
+.#{$namespace}padding-h-half {
+    padding-left: $padding / 2;
+    padding-right: $padding / 2;    
+}
+
+.#{$namespace}padding-h {
+    padding-left: $padding;
+    padding-right: $padding;    
+}
+    
+.#{$namespace}padding-h-clean {
+    padding-left: 0 !important;
+    padding-right: 0 !important;    
+}     
+   
+// padding L
+    
+.#{$namespace}padding-left-double {
+    padding-left: $padding * 2;    
+}
+    
+.#{$namespace}padding-left-half {
+    padding-left: $padding / 2;   
+}
+
+.#{$namespace}padding-left {
+    padding-left: $padding;    
+}
+    
+.#{$namespace}padding-left-clean {
+    padding-left: 0 !important;    
+}    
+ 
+// padding R
+    
+.#{$namespace}padding-right-double {
+    padding-right: $padding * 2;    
+}
+    
+.#{$namespace}padding-right-half {
+    padding-right: $padding / 2;   
+}
+
+.#{$namespace}padding-right {
+    padding-right: $padding;    
+}
+    
+.#{$namespace}padding-right-clean {
+    padding-right: 0 !important;    
+}     
+    
+// padding T
+    
+.#{$namespace}padding-top-double {
+    padding-top: $padding * 2;    
+}
+    
+.#{$namespace}padding-top-half {
+    padding-top: $padding / 2;   
+}
+
+.#{$namespace}padding-top {
+    padding-top: $padding;    
+}
+    
+.#{$namespace}padding-top-clean {
+    padding-top: 0 !important;    
+} 
+    
+// padding B
+    
+.#{$namespace}padding-bottom-double {
+    padding-bottom: $padding * 2;    
+}
+    
+.#{$namespace}padding-bottom-half {
+    padding-bottom: $padding / 2;   
+}
+
+.#{$namespace}padding-bottom {
+    padding-bottom: $padding;    
+}
+    
+.#{$namespace}padding-bottom-clean {
+    padding-bottom: 0 !important;    
+}     
+    
+}
+
+@include paddings();
+
+
+@include media-query(fullscreen){
+    @include paddings("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include paddings("laptop-");
+}
+
+@include media-query(tablet){
+    @include paddings("tablet-");
+}
+
+@include media-query(handheld){
+    @include paddings("handheld-");
+}
