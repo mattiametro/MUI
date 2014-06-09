@@ -1,0 +1,38 @@
+// @include vendor(border-radius, 2px)
+
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}
+
+// @include box-sizing(border-box)
+
+@mixin box-sizing($borderbox) {
+  -webkit-box-sizing: $borderbox;
+     -moz-box-sizing: $borderbox;
+      -ms-box-sizing: $borderbox;
+          box-sizing: $borderbox;
+}
+
+// @include media-query(palm){ [styles here] }
+
+@mixin media-query($media-query) {
+    @if $media-query == fullscreen {
+        @media only screen and (max-width:$fullscreen) { @content; }
+    }
+
+    @if $media-query == laptop {
+        @media only screen and (max-width:$laptop) { @content; }
+    }
+    
+    @if $media-query == tablet {
+        @media only screen and (max-width:$tablet) { @content; }
+    }
+    
+    @if $media-query == handheld {
+        @media only screen and (max-width:$handheld) { @content; }
+    }    
+}

@@ -1,0 +1,93 @@
+// resets all browsers
+
+* {
+    padding:0; 
+    margin:0; 
+    border:0
+    }
+    
+html {
+    font-size: 100%; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+    }
+    
+html, body {
+    min-height:100%; 
+    overflow-x:hidden;
+    }
+    
+a, a:link, a:visited {
+    text-decoration:none;
+    }
+    
+a:hover, a:link:hover {
+    text-decoration:underline;
+    }
+    
+input, select, form, button, textarea, option {
+    -webkit-appearance: none;
+    }
+    
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%; 
+    font-weight: normal;
+    } 
+
+ul, li {
+    list-style:none; 
+    overflow:hidden;
+    }
+    
+div {
+    overflow:hidden;
+    }
+    
+*,*:before,*:after {
+    @include box-sizing(border-box); 
+    }
+
+// resets for older and special browsers
+
+input[type="submit"] {
+    cursor:pointer; 
+    -webkit-appearance:none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+a:focus, button:focus, input:focus {
+    outline: none;
+    -webkit-appearance:none;    
+}
+
+a:active, a:hover {
+    outline: 0;
+}
+
+button,input,select,textarea {
+    font-size: 100%; 
+    vertical-align: baseline; 
+    *vertical-align: middle; 
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; 
+    -moz-box-sizing: content-box; 
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+button,input {
+    line-height: normal;
+}
+
+button {
+    cursor:pointer;
+}
