@@ -1,0 +1,41 @@
+.mui-naver .naver-handle { 
+    color: #333; 
+    cursor: pointer; 
+    display: none; 
+    font-size: 14px; 
+    height: 30px; 
+    line-height: 28px; 
+    text-transform: uppercase;
+    @include vendor(user-select, none);
+}
+
+.mui-naver .naver-handle:before { 
+    background: url('') no-repeat center; 
+    content: ' + '; 
+    display: block; 
+    float: left; 
+    height: 15px; 
+    margin: 7px 10px 0 0; 
+    width: 20px; 
+}
+
+.mui-naver .naver-wrapper { 
+    height: auto; 
+}
+
+.mui-naver .naver-container:after {
+    clear: both; 
+    content: "."; 
+    display: block; 
+    height: 0; 
+    line-height: 0; 
+    visibility: hidden; 
+}
+
+.mui-naver.enabled .naver-handle { 
+    display: block;
+}
+
+.mui-naver.enabled .naver-wrapper { 
+    height: 0px; overflow: hidden;
+}

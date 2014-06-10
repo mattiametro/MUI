@@ -90,6 +90,15 @@
 .#{$namespace}whole-5 {
     width: 5%;
 }
+    
+.#{$namespace}banner {
+    width: $banner;
+}   
+  
+.#{$namespace}leader {
+    width: $leader;
+}      
+    
 }
 
 @include widths();

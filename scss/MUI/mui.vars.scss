@@ -7,15 +7,21 @@ $fullscreen: 1800px;
 
 // vars for widths
 
-$whole:  100%;
-$banner: 300px;
-$leader: 928px;
+$whole:  100%; // .whole
+$banner: 300px; // .banner
+$leader: 928px; // .leader
 
 // vars for margin, base margin will have double and half size
 
-$margin: 10px;
+$margin: 10px; // .margin
 
 // vars for padding, base padding will have double and half size
 
-$padding: 10px;
+$padding: 10px; // .padding
+
+// fonts
+
+$base-font-family:     'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
+$base-font-size:  16px;  // .fs
+$base-font-color: #333333; // .fc
 
