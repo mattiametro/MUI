@@ -1,22 +1,23 @@
 .mui-naver .naver-handle { 
-    color: #333; 
+    color: #ffffff; 
+    background:#333;
     cursor: pointer; 
     display: none; 
-    font-size: 14px; 
-    height: 30px; 
-    line-height: 28px; 
-    text-transform: uppercase;
+    font-size: 28px; 
+    height: 52px; 
+    width: 52px;
+    line-height: 52px; 
+    text-align:center;
     @include vendor(user-select, none);
 }
 
 .mui-naver .naver-handle:before { 
-    background: url('') no-repeat center; 
-    content: ' + '; 
-    display: block; 
-    float: left; 
-    height: 15px; 
-    margin: 7px 10px 0 0; 
-    width: 20px; 
+    font-family: 'Ionicons';
+    content: '\f20e'; 
+}
+
+.mui-naver.open .naver-handle { 
+    background:#999;
 }
 
 .mui-naver .naver-wrapper { 
