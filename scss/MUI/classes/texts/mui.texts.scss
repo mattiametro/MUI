@@ -44,6 +44,11 @@
 
 .#{$namespace}text-line-through {
     text-decoration: line-through;
+}
+    
+.#{$namespace}text-decoration-none {
+    text-decoration: none;
+} 
     
 }
 

@@ -1,0 +1,51 @@
+// FLOATS
+
+@mixin addons($namespace: "") {
+    
+.#{$namespace}add-raquo:after {
+    content: ' \00BB';
+}
+    
+.#{$namespace}add-laquo:before {
+    content: '\00AB ';
+}
+    
+    
+.#{$namespace}add-rsaquo:after {
+    content: ' \203A';
+}     
+    
+.#{$namespace}add-lsaquo:before {
+    content: '\2039 ';
+}    
+
+
+
+}
+
+@include addons();
+
+
+@include media-query(fullscreen){
+    @include addons("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include addons("laptop-");
+}
+
+@include media-query(tablet){
+    @include addons("tablet-");
+}
+
+@include media-query(handheld){
+    @include addons("handheld-");
+}
+
+@include media-query(to-laptop){
+    @include addons("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include addons("to-tablet-");
+}
