@@ -11,13 +11,17 @@ $whole:  100%; // .whole
 $banner: 300px; // .banner
 $leader: 928px; // .leader
 
-// vars for margin, base margin will have double and half size
+// vars for margin
 
-$margin: 10px; // .margin
+$margin:         10px; // .margin
+$margin-half:    $margin / 2; // .margin-half
+$margin-double:  $margin * 2; // .margin-double
 
-// vars for padding, base padding will have double and half size
+// vars for padding
 
-$padding: 10px; // .padding
+$padding:        10px; // .padding
+$padding-half:   $padding / 2; // .padding-half
+$padding-double: $padding * 2; // .padding-double
 
 // fonts
 
@@ -25,3 +29,14 @@ $base-font-family:     'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans
 $base-font-size:  16px;  // .fs
 $base-font-color: #333333; // .fc
 
+// colors
+
+$body:   #ffffff;
+$header: #666666;  // background for .header 
+$button: #555555;  // background for basic buttons .button
+$menu:   #555555;
+
+$body-color:   $base-font-color;
+$header-color: #fafafa; // color for header text .header
+$button-color: #ffffff; // color for basic buttons .button
+$menu-color:   #ffffff; // color for menu links .menu .mui-menu

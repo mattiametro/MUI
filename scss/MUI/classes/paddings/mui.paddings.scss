@@ -5,11 +5,11 @@
 // padding T R B L    
     
 .#{$namespace}padding-double {
-    padding: $padding * 2;
+    padding: $padding-double;
 }
     
 .#{$namespace}padding-half {
-    padding: $padding / 2;
+    padding: $padding-half;
 }
 
 .#{$namespace}padding {
@@ -23,13 +23,13 @@
 // padding V
     
 .#{$namespace}padding-v-double {
-    padding-top: $padding * 2;
-    padding-bottom: $padding * 2;    
+    padding-top: $padding-double;
+    padding-bottom: $padding-double;    
 }
     
 .#{$namespace}padding-v-half {
-    padding-top: $padding / 2;
-    padding-bottom: $padding / 2;    
+    padding-top: $padding-half;
+    padding-bottom: $padding-half;    
 }
 
 .#{$namespace}padding-v {
@@ -45,13 +45,13 @@
 // padding H
     
 .#{$namespace}padding-h-double {
-    padding-left: $padding * 2;
-    padding-right: $padding * 2;    
+    padding-left: $padding-double;
+    padding-right: $padding-double;    
 }
     
 .#{$namespace}padding-h-half {
-    padding-left: $padding / 2;
-    padding-right: $padding / 2;    
+    padding-left: $padding-half;
+    padding-right: $padding-half;    
 }
 
 .#{$namespace}padding-h {
@@ -67,11 +67,11 @@
 // padding L
     
 .#{$namespace}padding-left-double {
-    padding-left: $padding * 2;    
+    padding-left: $padding-double;    
 }
     
 .#{$namespace}padding-left-half {
-    padding-left: $padding / 2;   
+    padding-left: $padding-half;   
 }
 
 .#{$namespace}padding-left {
@@ -85,11 +85,11 @@
 // padding R
     
 .#{$namespace}padding-right-double {
-    padding-right: $padding * 2;    
+    padding-right: $padding-double;    
 }
     
 .#{$namespace}padding-right-half {
-    padding-right: $padding / 2;   
+    padding-right: $padding-half;   
 }
 
 .#{$namespace}padding-right {
@@ -103,11 +103,11 @@
 // padding T
     
 .#{$namespace}padding-top-double {
-    padding-top: $padding * 2;    
+    padding-top: $padding-double;    
 }
     
 .#{$namespace}padding-top-half {
-    padding-top: $padding / 2;   
+    padding-top: $padding-half;   
 }
 
 .#{$namespace}padding-top {
@@ -121,11 +121,11 @@
 // padding B
     
 .#{$namespace}padding-bottom-double {
-    padding-bottom: $padding * 2;    
+    padding-bottom: $padding-double;    
 }
     
 .#{$namespace}padding-bottom-half {
-    padding-bottom: $padding / 2;   
+    padding-bottom: $padding-half;   
 }
 
 .#{$namespace}padding-bottom {

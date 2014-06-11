@@ -5,11 +5,11 @@
 // margin T R B L    
     
 .#{$namespace}margin-double {
-    margin: $margin * 2;
+    margin: $margin-double;
 }
     
 .#{$namespace}margin-half {
-    margin: $margin / 2;
+    margin: $margin-half;
 }
 
 .#{$namespace}margin {
@@ -23,13 +23,13 @@
 // margin V
     
 .#{$namespace}margin-v-double {
-    margin-top: $margin * 2;
-    margin-bottom: $margin * 2;    
+    margin-top: $margin-double;
+    margin-bottom: $margin-double;    
 }
     
 .#{$namespace}margin-v-half {
-    margin-top: $margin / 2;
-    margin-bottom: $margin / 2;    
+    margin-top: $margin-half;
+    margin-bottom: $margin-half;    
 }
 
 .#{$namespace}margin-v {
@@ -45,13 +45,13 @@
 // margin H
     
 .#{$namespace}margin-h-double {
-    margin-left: $margin * 2;
-    margin-right: $margin * 2;    
+    margin-left: $margin-double;
+    margin-right: $margin-double;    
 }
     
 .#{$namespace}margin-h-half {
-    margin-left: $margin / 2;
-    margin-right: $margin / 2;    
+    margin-left: $margin-half;
+    margin-right: $margin-half;    
 }
 
 .#{$namespace}margin-h {
@@ -67,11 +67,11 @@
 // margin L
     
 .#{$namespace}margin-left-double {
-    margin-left: $margin * 2;    
+    margin-left: $margin-double;    
 }
     
 .#{$namespace}margin-left-half {
-    margin-left: $margin / 2;   
+    margin-left: $margin-half;   
 }
 
 .#{$namespace}margin-left {
@@ -85,11 +85,11 @@
 // margin R
     
 .#{$namespace}margin-right-double {
-    margin-right: $margin * 2;    
+    margin-right: $margin-double;    
 }
     
 .#{$namespace}margin-right-half {
-    margin-right: $margin / 2;   
+    margin-right: $margin-half;   
 }
 
 .#{$namespace}margin-right {
@@ -103,11 +103,11 @@
 // margin T
     
 .#{$namespace}margin-top-double {
-    margin-top: $margin * 2;    
+    margin-top: $margin-double;    
 }
     
 .#{$namespace}margin-top-half {
-    margin-top: $margin / 2;   
+    margin-top: $margin-half;   
 }
 
 .#{$namespace}margin-top {
@@ -121,11 +121,11 @@
 // margin B
     
 .#{$namespace}margin-bottom-double {
-    margin-bottom: $margin * 2;    
+    margin-bottom: $margin-double;    
 }
     
 .#{$namespace}margin-bottom-half {
-    margin-bottom: $margin / 2;   
+    margin-bottom: $margin-half;   
 }
 
 .#{$namespace}margin-bottom {

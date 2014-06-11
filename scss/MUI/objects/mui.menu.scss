@@ -1,0 +1,18 @@
+// use: .mui-menu for nav ul li elements on nav
+
+.mui-menu {
+    width:100%;
+    position:relative;
+    background:$menu;
+    color:$menu-color;
+}
+
+.mui-menu ul li {
+    float:left;
+}
+
+.mui-menu ul li a {
+    padding: $padding-double;
+    display:inline-block;
+    color:$menu-color;    
+}   

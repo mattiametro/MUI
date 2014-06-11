@@ -1,4 +1,4 @@
-// subwidths
+// SUBWIDTHS
 
 @mixin widths($namespace: "") {
 .#{$namespace}whole {
@@ -33,7 +33,7 @@
     width: $whole / 6;
 }
    
-// widths
+// WIDTHS
 
 .#{$namespace}whole-95 {
     width: 95%;

@@ -1,0 +1,44 @@
+// FLOATS
+
+@mixin floats($namespace: "") {
+    
+.#{$namespace}float-left {
+    float:left;
+}
+    
+.#{$namespace}float-right {
+    float:right;
+}
+
+.#{$namespace}float-none {
+    float:none;
+}  
+
+}
+
+@include floats();
+
+
+@include media-query(fullscreen){
+    @include floats("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include floats("laptop-");
+}
+
+@include media-query(tablet){
+    @include floats("tablet-");
+}
+
+@include media-query(handheld){
+    @include floats("handheld-");
+}
+
+@include media-query(to-laptop){
+    @include floats("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include floats("to-tablet-");
+}

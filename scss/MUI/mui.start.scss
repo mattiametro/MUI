@@ -10,6 +10,10 @@
 
 @import "resets/mui.resets.scss";
 
+// plugins
+
+@import "plugins/mui.naver.scss";
+
 // typos
 
 @import "typos/mui.typos.scss";
@@ -21,7 +25,8 @@
 @import "classes/margins/mui.margins.scss";
 @import "classes/paddings/mui.paddings.scss";
 @import "classes/displays/mui.displays.scss";
+@import "classes/floats/mui.floats.scss";
 
-// plugins
+// objects
 
-@import "plugins/mui.naver.scss";
+@import "objects/mui.menu.scss";

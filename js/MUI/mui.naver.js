@@ -24,7 +24,7 @@
 			closed: "",
 			open: ""
 		},
-		maxWidth: "980px"
+		maxWidth: "768px"
 	};
 
 	/**
@@ -184,7 +184,7 @@
 			var $handle = $nav.find(".naver-handle").length ? $nav.find(".naver-handle").detach() : $('<span class="naver-handle"></span>');
 
 			$nav.addClass("naver " + opts.customClass)
-				.wrapInner('<div class="naver-container"></div>')
+				.wrapInner('<div class="naver-container"><ul></ul></div>')
 				.wrapInner('<div class="naver-wrapper  trns"></div>')
 				.prepend($handle);
 

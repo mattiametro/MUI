@@ -1,3 +1,5 @@
+// .mui-naver works with mui.naver.js for ul li a on ul
+
 .mui-naver .naver-handle { 
     color: #ffffff; 
     background:#333;
@@ -20,6 +22,11 @@
     background:#999;
 }
 
+.mui-naver.open .naver-handle:before {
+    content: '\f2bd';
+    font-size: 30px;
+}
+
 .mui-naver .naver-wrapper { 
     height: auto; 
 }
@@ -31,6 +38,25 @@
     height: 0; 
     line-height: 0; 
     visibility: hidden; 
+}
+
+.mui-naver.enabled .naver-container * li {
+    clear: both; 
+    text-align:center;
+    float:none;
+    width:100%;
+}
+
+.mui-naver.enabled .naver-container * a {
+    clear: both; 
+    text-align:center;
+    float:none;
+    display:block;
+    width:100%;
+}
+
+.mui-naver.enabled .naver-container * li:nth-of-type(odd) a {
+    background-color: darken($menu, 3.0);
 }
 
 .mui-naver.enabled .naver-handle { 
