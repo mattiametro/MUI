@@ -1,0 +1,75 @@
+// TEXTS
+
+@mixin texts($namespace: "") {
+    
+.#{$namespace}text-left {
+    text-align: left;
+}
+    
+.#{$namespace}text-right {
+    text-align: right;
+}
+
+.#{$namespace}text-center {
+    text-align: center;
+}  
+
+.#{$namespace}text-justified {
+    text-align: justified;
+} 
+    
+.#{$namespace}text-uppercase {
+    text-align: justified;
+} 
+    
+.#{$namespace}text-uppercase {
+    text-transform: uppercase;
+}
+
+.#{$namespace}text-lowercase {
+    text-transform: lowercase;
+}
+
+.#{$namespace}text-capitalize {
+    text-transform: capitalize;
+}
+   
+.#{$namespace}text-underline {
+    text-decoration: underline;
+}    
+    
+.#{$namespace}text-overline {
+    text-decoration: overline;
+}
+
+.#{$namespace}text-line-through {
+    text-decoration: line-through;
+    
+}
+
+@include texts();
+
+
+@include media-query(fullscreen){
+    @include texts("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include texts("laptop-");
+}
+
+@include media-query(tablet){
+    @include texts("tablet-");
+}
+
+@include media-query(handheld){
+    @include texts("handheld-");
+}
+
+@include media-query(to-laptop){
+    @include texts("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include texts("to-tablet-");
+}

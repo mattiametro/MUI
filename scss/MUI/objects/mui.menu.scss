@@ -1,18 +1,32 @@
-// use: .mui-menu for nav ul li elements on nav
+// use: .mui-menu for nav ul (ol) li elements on nav
 
-.mui-menu {
+.mui-menu, .mui-menu--v {
     width:100%;
     position:relative;
     background:$menu;
     color:$menu-color;
 }
 
-.mui-menu ul li {
+.mui-menu * li {
     float:left;
 }
 
-.mui-menu ul li a {
+.mui-menu * li a, .mui-menu--v * li a {
     padding: $padding-double;
     display:inline-block;
     color:$menu-color;    
-}   
+} 
+
+// variant v
+
+.mui-menu--v * li {
+    float:none;
+}
+
+.mui-menu--v * li a {
+    display:block;
+}
+
+.mui-menu--v * li:nth-of-type(odd) a {
+    background-color: darken($menu, 3.0);
+}

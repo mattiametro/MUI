@@ -1,0 +1,40 @@
+// FONTS
+
+@mixin fonts($namespace: "") {
+    
+.#{$namespace}bold {
+    font-weight:bold;
+}
+    
+.#{$namespace}italic {
+    font-style:italic;
+}
+  
+}
+
+@include fonts();
+
+
+@include media-query(fullscreen){
+    @include fonts("fullscreen-");
+}
+
+@include media-query(laptop){
+    @include fonts("laptop-");
+}
+
+@include media-query(tablet){
+    @include fonts("tablet-");
+}
+
+@include media-query(handheld){
+    @include fonts("handheld-");
+}
+
+@include media-query(to-laptop){
+    @include fonts("to-laptop-");
+}
+
+@include media-query(to-tablet){
+    @include fonts("to-tablet-");
+}
