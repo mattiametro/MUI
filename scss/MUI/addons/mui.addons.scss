@@ -1,4 +1,4 @@
-// FLOATS
+// ADDONS
 
 @mixin addons($namespace: "") {
     
@@ -10,7 +10,6 @@
     content: '\00AB ';
 }
     
-    
 .#{$namespace}add-rsaquo:after {
     content: ' \203A';
 }     
@@ -19,8 +18,22 @@
     content: '\2039 ';
 }    
 
+.#{$namespace}add-bullet:before {
+    content: '\2022 ';
+} 
 
-
+.#{$namespace}add-rang:after {
+    content: ' \3009';
+} 
+    
+.#{$namespace}add-lang:before {
+    content: '\3008 ';
+} 
+    
+.#{$namespace}add-copy:before {
+    content: '\00A9 ';
+}     
+    
 }
 
 @include addons();
