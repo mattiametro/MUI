@@ -25,18 +25,36 @@ $padding-double: $padding * 2; // .padding-double
 
 // fonts
 
-$base-font-family:     'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
-$base-font-size:  16px;  // .fs
-$base-font-color: #333333; // .fc
+$base-font-family:    'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
+$base-font-size:      16px;  // .fs
+$base-font-color:     #333333; // .fc
+$button-font-family:  'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  
 
 // colors
 
-$body:   #ffffff;
-$header: #666666;  // background for .header 
-$button: #555555;  // background for basic buttons .button
-$menu:   #555555;
+$brand:        #0779ae;  // brand color 
+$brand-second: #7ec9ec;  // brand secondary
+
+$darker-grey:  #333333;
+$dark-grey:    #666666;
+$medium-grey:  #999999;
+$grey:         #CCCCCC;
+$light-grey:   #EEEEEE;
+$lighter-grey: #F0F0F0;
+
+$body:        #ffffff;
+$header:      $brand;  // background for .header 
+$button:      #555555;  // background for basic buttons .button
+$menu:        $brand-second;  // background for menu .menu .mui-menu
+$redbutton:   #f00; // buttons for alerts and delete actions
+$greenbutton: green; // buttons for affermative actions 
+$greybutton:  $light-grey; // other buttons 
 
 $body-color:   $base-font-color;
 $header-color: #fafafa; // color for header text .header
 $button-color: #ffffff; // color for basic buttons .button
 $menu-color:   #ffffff; // color for menu links .menu .mui-menu
+
+// radius
+
+$radius: 2px;

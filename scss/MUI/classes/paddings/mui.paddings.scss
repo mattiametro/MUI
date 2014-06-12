@@ -16,6 +16,10 @@
     padding: $padding;
 }
     
+.#{$namespace}padding-children > * {
+    padding: $padding;
+}
+    
 .#{$namespace}padding-clean {
     padding: 0 !important;
 }

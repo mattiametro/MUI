@@ -2,7 +2,7 @@
 
 .mui-naver .naver-handle { 
     color: #ffffff; 
-    background:#333;
+    background-color: darken($menu, 8.0);
     cursor: pointer; 
     display: none; 
     font-size: 28px; 
@@ -19,7 +19,7 @@
 }
 
 .mui-naver.open .naver-handle { 
-    background:#999;
+    background-color: darken($menu, 9.0);
 }
 
 .mui-naver.open .naver-handle:before {

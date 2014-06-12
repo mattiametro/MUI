@@ -1,0 +1,60 @@
+// BUTTONS
+
+.button {
+    background-color: $button;
+    color: $button-color !important;
+    text-decoration:none;
+    display:inline-block;
+    padding-top: $padding-half;
+    padding-bottom: $padding-half;
+    padding-right: $padding;
+    padding-left: $padding;
+    font-family: $button-font-family;
+    cursor:pointer;
+    border-radius:$radius;
+     &:hover {
+        background-color: darken($button, 6.0);     
+        text-decoration:none !important;
+    }     
+}
+
+.button--full {
+    @extend .button;
+    width:100%;
+    text-align:center;
+}
+
+.button--big {
+    @extend .button;
+    font-size:1.5em;
+}
+
+.button--small {
+    @extend .button;
+    font-size:0.8em;
+}
+
+.button--green {
+    @extend .button;
+    background-color:$greenbutton;
+     &:hover {
+        background-color: darken($greenbutton, 6.0);     
+    }    
+}
+
+.button--grey {
+    @extend .button;
+    background-color:$greybutton;
+    color: $medium-grey !important;
+     &:hover {
+        background-color: darken($greybutton, 6.0);     
+    }    
+}
+
+.button--red {
+    @extend .button;
+    background-color:$redbutton;
+     &:hover {
+        background-color: darken($redbutton, 6.0);     
+    }    
+}
