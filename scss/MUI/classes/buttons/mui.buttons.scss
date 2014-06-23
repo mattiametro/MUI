@@ -1,60 +1,108 @@
 // BUTTONS
 
 .button {
+    @extend .radius;
     background-color: $button;
-    color: $button-color !important;
+    color: $button-text !important;
+    border: 1px solid $button;    
     text-decoration:none;
     display:inline-block;
     padding-top: $padding-half;
     padding-bottom: $padding-half;
     padding-right: $padding;
     padding-left: $padding;
-    font-family: $button-font-family;
+    font-family: $button-font-family !important;
+    font-weight: 400;
+    font-size:16px;
     cursor:pointer;
-    border-radius:$radius;
+    @include vendor(transition, all 100ms ease-in-out 0s);
      &:hover {
-        background-color: darken($button, 6.0);     
+        background-color: $button-text;  
+        color:$button !important;
         text-decoration:none !important;
     }     
 }
 
-.button--full {
+.button-full {
     @extend .button;
     width:100%;
     text-align:center;
 }
 
-.button--big {
+.button-big {
     @extend .button;
-    font-size:1.5em;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    padding-right: $padding-double;
+    padding-left: $padding-double;
+    font-size:1.3em;
 }
 
-.button--small {
+.button-small {
     @extend .button;
     font-size:0.8em;
 }
 
-.button--green {
-    @extend .button;
-    background-color:$greenbutton;
+.button--link {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $button !important;
+    &:hover {
+        background-color: $light-grey;
+        border: 1px solid $light-grey;
+    }
+}
+
+.button--link--bright {
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: $button-text !important;
+    &:hover {
+        border: 1px solid $button-text;
+    }
+}
+
+.button--ok {
+    background-color:$good;
+    border: 1px solid $good;
+    color: $button-text;
      &:hover {
-        background-color: darken($greenbutton, 6.0);     
+        background-color: $button-text;  
+        color:$good !important;
+        text-decoration:none !important;     
     }    
 }
 
-.button--grey {
-    @extend .button;
-    background-color:$greybutton;
-    color: $medium-grey !important;
+.button--alert {
+    background-color:$bad;
+    border: 1px solid $bad;
+    color: $button-text;
      &:hover {
-        background-color: darken($greybutton, 6.0);     
+        background-color: $button-text;  
+        color:$bad !important;
+        text-decoration:none !important;     
     }    
 }
 
-.button--red {
-    @extend .button;
-    background-color:$redbutton;
+.button--obs {
+    background-color:$obs;
+    border: 1px solid $obs;
+    color: $button-text;
      &:hover {
-        background-color: darken($redbutton, 6.0);     
+        background-color: $button-text;  
+        color:$obs !important;
+        text-decoration:none !important;     
     }    
 }
+
+.button--promo {
+    background-color:$promo;
+    border: 1px solid $promo;
+    color: $button-text;
+     &:hover {
+        background-color: $button-text;  
+        color:$promo !important;
+        text-decoration:none !important;     
+    }    
+}
+

@@ -16,6 +16,22 @@
 .#{$namespace}superhalf {
     width: $whole / 2 !important;
 }
+    
+.#{$namespace}whole-children > * {
+    width: $whole;
+}
+    
+.#{$namespace}superwhole-children > * {
+    width: $whole !important;
+}
+
+.#{$namespace}half-children > * {
+    width: $whole / 2;
+}
+    
+.#{$namespace}superhalf-children > * {
+    width: $whole / 2 !important;
+}
 
 .#{$namespace}third {
     width: $whole / 3;
@@ -31,6 +47,22 @@
 
 .#{$namespace}sixth {
     width: $whole / 6;
+}
+    
+.#{$namespace}sixth {
+    width: $whole / 7;
+}
+    
+.#{$namespace}seventh {
+    width: $whole / 8;
+}
+   
+.#{$namespace}nineth {
+    width: $whole / 9;
+}
+    
+.#{$namespace}tenth {
+    width: $whole / 10;
 }
    
 // WIDTHS
@@ -89,14 +121,6 @@
 
 .#{$namespace}whole-5 {
     width: 5%;
-}
-    
-.#{$namespace}banner {
-    width: $banner;
-}   
-  
-.#{$namespace}leader {
-    width: $leader;
 }      
     
 }

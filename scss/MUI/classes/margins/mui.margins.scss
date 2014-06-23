@@ -16,6 +16,10 @@
     margin: $margin;
 }
     
+.#{$namespace}margin-children > * {
+    margin: $margin;
+}    
+    
 .#{$namespace}margin-clean {
     margin: 0 !important;
 }

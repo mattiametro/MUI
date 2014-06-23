@@ -20,6 +20,7 @@ if ( w <= tablet && w > handheld) {
 }
 
 $(window).resize(function() {
+    
     w = $(window).width(); 
     if ( w <= handheld ) {
         $('body').addClass('mui-handheld');

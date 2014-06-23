@@ -1,6 +1,9 @@
-// utils
 
 @import "mui.vars.scss";  
+
+// typos
+
+@import "typos/mui.typos.scss";
 
 // mixins
 
@@ -14,9 +17,9 @@
 
 @import "plugins/mui.naver.scss";
 
-// typos
+// layout
 
-@import "typos/mui.typos.scss";
+@import "layout/mui.layout.scss";
 
 // classes
 
@@ -29,10 +32,16 @@
 @import "classes/texts/mui.texts.scss";
 @import "classes/fonts/mui.fonts.scss";
 @import "classes/buttons/mui.buttons.scss";
+@import "classes/colors/mui.colors.scss";
+
+// helpers
+
+@import "helpers/mui.helpers.scss";
 
 // objects
 
 @import "objects/mui.menu.scss";
+@import "objects/mui.grid.scss";
 
 // addons
 
@@ -41,3 +50,4 @@
 // globals
 
 @import "globals/mui.radius.scss";
+

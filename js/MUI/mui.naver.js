@@ -8,7 +8,7 @@
 
 ;(function ($, window) {
 	"use strict";
-
+    
 	/**
 	 * @options
 	 * @param customClass [string] <''> "Class applied to instance"
@@ -194,7 +194,7 @@
 				$wrapper: $nav.find(".naver-wrapper"),
 				$handle: $nav.find(".naver-handle")
 			}, opts);
-
+            
 			data.$handle.text((opts.label) ? opts.labels.closed : '');
 			data.$nav.on("touchstart.naver", ".naver-handle", data, _onTouchStart)
 					 .on("click.naver", ".naver-handle", data, _onClick)

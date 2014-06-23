@@ -1,0 +1,29 @@
+// use: .grid * // first-child elements are grid elements 
+
+.grid {
+  display: table;
+  width: 101.6%; //fallback
+  border-collapse: separate;
+  border-spacing:  10px 0;
+  margin-left:-10px;
+  width:-moz-calc(100% + 20px);    
+  width:calc(100% + 20px);
+}
+
+.grid_item, .grid > * {
+  display: table-cell;
+}
+
+.mui-tablet .grid,
+.mui-handheld .grid {
+  margin:0;
+  display:block;
+  width:100%;
+}
+
+.mui-tablet .grid_item, 
+.mui-tablet .grid > *,
+.mui-handheld .grid_item, 
+.mui-handheld .grid > * {
+  display: block;
+}

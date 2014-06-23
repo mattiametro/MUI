@@ -1,8 +1,8 @@
 // .mui-naver works with mui.naver.js for ul li a on ul
 
 .mui-naver .naver-handle { 
-    color: #ffffff; 
-    background-color: darken($menu, 8.0);
+    color: $mui-naver-button-text; 
+    background-color: lighten($mui-naver-button, 8.0);
     cursor: pointer; 
     display: none; 
     font-size: 28px; 
@@ -14,17 +14,15 @@
 }
 
 .mui-naver .naver-handle:before { 
-    font-family: 'Ionicons';
-    content: '\f20e'; 
+    content: '+'; 
 }
 
 .mui-naver.open .naver-handle { 
-    background-color: darken($menu, 9.0);
+    background-color: $mui-naver-button;
 }
 
 .mui-naver.open .naver-handle:before {
-    content: '\f2bd';
-    font-size: 30px;
+  // close symbol
 }
 
 .mui-naver .naver-wrapper { 
@@ -53,10 +51,17 @@
     float:none;
     display:block;
     width:100%;
+    color:$mui-naver-button-text !important;
+    text-decoration:none;
+    padding: $padding-double;
 }
 
-.mui-naver.enabled .naver-container * li:nth-of-type(odd) a {
-    background-color: darken($menu, 3.0);
+.mui-naver.enabled .naver-container * li a {
+    background-color: $mui-naver-button;
+}
+
+.mui-naver.enabled .naver-container * li:nth-of-type(even) a {
+    background-color: lighten($mui-naver-button, 6.0);
 }
 
 .mui-naver.enabled .naver-handle { 

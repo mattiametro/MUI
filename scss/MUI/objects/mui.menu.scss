@@ -1,32 +1,39 @@
-// use: .mui-menu for nav ul (ol) li elements on nav
+// use: .menu for nav ul (ol) li // example // nav.menu ul li
 
-.mui-menu, .mui-menu--v {
+.menu, .menu--v {
     width:100%;
     position:relative;
-    background:$menu;
-    color:$menu-color;
+    background-color: $menu;
+    color:$menu-text;
 }
 
-.mui-menu * li {
+.menu * li {
     float:left;
 }
 
-.mui-menu * li a, .mui-menu--v * li a {
-    padding: $padding-double;
+.menu * li a, .menu--v * li a {
     display:inline-block;
-    color:$menu-color;    
+    color:$menu-text;  
+    padding: $padding;
+    font-weight:600;
+} 
+
+.menu * li a:hover, .menu--v * li a:hover {
+    background-color: $menu-text;
+    color:$menu;    
+    text-decoration:none;
 } 
 
 // variant v
 
-.mui-menu--v * li {
+.menu--v * li {
     float:none;
 }
 
-.mui-menu--v * li a {
+.menu--v * li a {
     display:block;
 }
 
-.mui-menu--v * li:nth-of-type(odd) a {
+.menu--v * li:nth-of-type(odd) a {
     background-color: darken($menu, 3.0);
 }

@@ -23,6 +23,10 @@
 .#{$namespace}padding-clean {
     padding: 0 !important;
 }
+    
+.#{$namespace}happyspacing * {
+    padding: $padding;
+}
 
 // padding V
     

@@ -1,0 +1,31 @@
+// HELPERS SUCH AS CF CB HR
+
+.cf {
+    &:after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $light-grey;
+    margin: 1em 0;
+    padding: 0;
+    clear:both;
+}
+
+.space-half {
+    padding: 2px;
+}
+
+.space {
+    padding: 5px;
+}
+
+.space-double {
+    padding: 8px;
+}

@@ -12,7 +12,19 @@
 
 .#{$namespace}float-none {
     float:none;
-}  
+} 
+    
+.#{$namespace}float-left-children > * {
+    float:left;
+}
+    
+.#{$namespace}float-right-children > * {
+    float:right;
+}
+
+.#{$namespace}float-none-children > * {
+    float:none;
+}     
 
 }
 

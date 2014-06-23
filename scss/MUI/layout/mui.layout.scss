@@ -1,0 +1,37 @@
+// LAYOUT ELEMENTS ( viewport, wrapper, banners, header, footer, aside, etc )
+
+.viewport {
+    width: $viewport;
+}
+
+.wrapper {
+    max-width: $wrapper;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 100%;
+    max-width: $banner;
+    & > * {
+        width: 100%;        
+    }
+}   
+  
+.leader {
+    width: 100%;
+    max-width: $leader;
+    & > * {
+        width: 100%;        
+    }    
+}
+
+.header {
+    background-color: $header;
+    color: $header-text;
+}
+
+.content-block {
+   @extend .padding-double;
+   @extend .margin-v-double;
+   background: $lighter-grey;
+}

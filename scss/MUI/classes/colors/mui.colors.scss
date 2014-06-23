@@ -1,0 +1,59 @@
+// BACKGROUND COLORS
+
+.primary {
+    background-color:$primary;
+}
+
+.secondary {
+    background-color:$secondary;
+}
+
+.darker-grey {
+    background-color:$darker-grey;
+}
+
+.dark-grey {
+    background-color:$dark-grey;
+}
+
+.medium-grey {
+    background-color:$medium-grey;
+}
+
+.grey {
+    background-color:$grey;
+}
+
+.light-grey {
+    background-color:$light-grey;
+}
+
+.lighter-grey {
+    background-color:$lighter-grey;
+}
+
+.good {
+    background-color:$good;    
+}
+
+.bad, .alert {
+    background-color:$bad;   
+}
+
+.obs {
+    background-color:$obs;    
+}
+
+.promo {
+    background-color:$promo;   
+}
+
+// TEXT COLORS
+
+.primary-c {
+    color:$primary;
+}
+
+.secondary-c {
+    color:$secondary;
+}

@@ -1,60 +1,95 @@
-// vars for breakpoints - as of mui.resize.js
+/**** FONT IMPORT ****/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+/**** HARDWARE BREAKPOINTS ****/
 
 $handheld:    500px;
 $tablet:      768px;
 $laptop:     1280px;
 $fullscreen: 1800px;
 
-// vars for widths
+/**** DEFAULT WIDTHS ****/
 
-$whole:  100%; // .whole
-$banner: 300px; // .banner
-$leader: 928px; // .leader
+$whole:    100%;   // .whole
+$banner:   300px;  // .banner
+$leader:   928px;  // .leader
+$viewport: 100%;   // .viewport
+$wrapper:  1280px; // .wrapper
 
-// vars for margin
+/**** BASE MARGIN UNITS ****/
 
 $margin:         10px; // .margin
 $margin-half:    $margin / 2; // .margin-half
 $margin-double:  $margin * 2; // .margin-double
 
-// vars for padding
+/**** BASE PADDING UNITS ****/
 
 $padding:        10px; // .padding
 $padding-half:   $padding / 2; // .padding-half
 $padding-double: $padding * 2; // .padding-double
 
-// fonts
+/**** BASE FONT SETTINGS ****/
 
-$base-font-family:    'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
+$base-font-family:    'Open Sans', 'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
 $base-font-size:      16px;  // .fs
-$base-font-color:     #333333; // .fc
-$button-font-family:  'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  
+$base-font-color:     #555555; // .fc
+$button-font-family:  'Open Sans', 'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;   
 
-// colors
+$h1: $base-font-size + 22;
+$h2: $base-font-size + 12;
+$h3: $base-font-size + 4;
+$h4: $base-font-size + 2;
+$h5: $base-font-size - 2;
+$h6: $base-font-size - 4;
 
-$brand:        #0779ae;  // brand color 
-$brand-second: #7ec9ec;  // brand secondary
+/**** BRAND COLORS ****/
 
-$darker-grey:  #333333;
-$dark-grey:    #666666;
-$medium-grey:  #999999;
-$grey:         #CCCCCC;
-$light-grey:   #EEEEEE;
-$lighter-grey: #F0F0F0;
+$primary:        seagreen;  // brand color .primary
+$secondary:      khaki;  // brand secondary .secondary
+$primary-text:   #FFFFFF;
+$secondary-text: darken($secondary, 8.0);
 
-$body:        #ffffff;
-$header:      $brand;  // background for .header 
-$button:      #555555;  // background for basic buttons .button
-$menu:        $brand-second;  // background for menu .menu .mui-menu
-$redbutton:   #f00; // buttons for alerts and delete actions
-$greenbutton: green; // buttons for affermative actions 
-$greybutton:  $light-grey; // other buttons 
+/**** ESSENTIAL GREYS ****/
 
-$body-color:   $base-font-color;
-$header-color: #fafafa; // color for header text .header
-$button-color: #ffffff; // color for basic buttons .button
-$menu-color:   #ffffff; // color for menu links .menu .mui-menu
+$darker-grey:  #333333;  // .darker-grey
+$dark-grey:    #666666;  // .dark-grey
+$medium-grey:  #999999;  // .medium-grey
+$grey:         #CCCCCC;  // .grey
+$light-grey:   #EEEEEE;  // .light-grey
+$lighter-grey: #FAFAFA;  // .lighter-grey
 
-// radius
+/**** LAYOUT BASE COLORS ****/
+
+$body:         $lighter-grey;
+$header:       $primary;
+$header-text:  $primary-text;
+
+/**** COLOR FOR RESPONSIVE MENU AND MENU BUTTON ****/
+
+$mui-naver-button:      #222222;
+$mui-naver-button-text: #FFFFFF;
+
+/**** MENU COLORS FROM BRAND COLORS ****/
+
+$menu:      $primary;
+$menu-text: $primary-text;
+
+/**** BUTTON COLORS ****/
+
+$button:      #666;
+$button-text: #FFF;
+
+/* action buttons */
+
+$good:   forestgreen;
+$bad:    crimson;
+$obs:    gold;
+$promo:  royalblue;
+
+/**** BORDER RADIUS ****/
 
 $radius: 2px;
+
+
+
