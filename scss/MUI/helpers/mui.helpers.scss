@@ -29,3 +29,15 @@ hr {
 .space-double {
     padding: 8px;
 }
+
+.radius {
+    @include vendor(border-radius,$radius);
+}
+
+.noradius {
+    @include vendor(border-radius,0);
+}
+
+.circle {
+    @include vendor(border-radius, 100%);
+}

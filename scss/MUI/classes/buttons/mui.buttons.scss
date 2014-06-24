@@ -9,13 +9,13 @@
     display:inline-block;
     padding-top: $padding-half;
     padding-bottom: $padding-half;
-    padding-right: $padding;
-    padding-left: $padding;
+    padding-right: $padding-double;
+    padding-left: $padding-double;
     font-family: $button-font-family !important;
     font-weight: 400;
-    font-size:16px;
+    font-size:14px;
     cursor:pointer;
-    @include vendor(transition, all 100ms ease-in-out 0s);
+    @include vendor(transition, all 160ms ease-in-out 0s);
      &:hover {
         background-color: $button-text;  
         color:$button !important;
@@ -40,7 +40,7 @@
 
 .button-small {
     @extend .button;
-    font-size:0.8em;
+    font-size:12px;
 }
 
 .button--link {
@@ -62,47 +62,112 @@
     }
 }
 
-.button--ok {
-    background-color:$good;
-    border: 1px solid $good;
+.button--success {
+    background-color:$success;
+    border: 1px solid $success;
     color: $button-text;
      &:hover {
         background-color: $button-text;  
-        color:$good !important;
+        color:$success !important;
         text-decoration:none !important;     
     }    
 }
 
-.button--alert {
-    background-color:$bad;
-    border: 1px solid $bad;
+.button--danger {
+    background-color:$danger;
+    border: 1px solid $danger;
     color: $button-text;
      &:hover {
         background-color: $button-text;  
-        color:$bad !important;
+        color:$danger !important;
         text-decoration:none !important;     
     }    
 }
 
-.button--obs {
-    background-color:$obs;
-    border: 1px solid $obs;
+.button--warning {
+    background-color:$warning;
+    border: 1px solid $warning;
     color: $button-text;
      &:hover {
         background-color: $button-text;  
-        color:$obs !important;
+        color:$warning !important;
         text-decoration:none !important;     
     }    
 }
 
-.button--promo {
-    background-color:$promo;
-    border: 1px solid $promo;
+.button--info {
+    background-color:$info;
+    border: 1px solid $info;
     color: $button-text;
      &:hover {
         background-color: $button-text;  
-        color:$promo !important;
+        color:$info !important;
         text-decoration:none !important;     
     }    
 }
 
+.button--disabled {
+    background-color:$disabled;
+    border: 1px solid $disabled;
+    color: $medium-grey !important;
+     &:hover {
+        background-color: $medium-grey;  
+        color:$disabled !important;
+        text-decoration:none !important;     
+    }    
+}
+
+.button--special {
+    background-color:$special;
+    border: 1px solid $special;
+    color: $dark-grey !important;
+     &:hover {
+        background-color: $dark-grey; 
+        border-color: $dark-grey;
+        color:$special !important;
+        text-decoration:none !important;     
+    }    
+}
+
+.button--circle {
+    @extend .circle;
+    padding:0;
+    width:30px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+}
+
+.button--circle > * {
+    line-height:30px !important;
+}
+
+.button--circle--big {
+    @extend .circle;
+    padding:0;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    font-size:18px;
+}
+
+.button--circle--big > * {
+    line-height:50px !important;
+    font-size:18px;    
+}
+
+.button--circle--large {
+    @extend .circle;
+    padding:0;
+    width:90px;
+    height:90px;
+    line-height:90px;
+    text-align:center;
+    font-size: 32px;
+}
+
+.button--circle--large > * {
+    line-height:90px !important;
+    font-size:32px;    
+}

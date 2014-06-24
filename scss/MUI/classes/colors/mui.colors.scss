@@ -32,28 +32,93 @@
     background-color:$lighter-grey;
 }
 
-.good {
-    background-color:$good;    
+.success {
+    background-color:$success;  
+    color: white;
 }
 
-.bad, .alert {
-    background-color:$bad;   
+.danger {
+    background-color:$danger;  
+    color: white;    
 }
 
-.obs {
-    background-color:$obs;    
+.warning {
+    background-color:$warning;   
+    color: white;    
 }
 
-.promo {
-    background-color:$promo;   
+.info {
+    background-color:$info;   
+    color: white;    
+}
+
+.disabled {
+    background-color:$disabled;   
+    color: $medium-grey;
+}
+
+.white {
+    background-color: white;
+}
+
+.black {
+    background-color: black;
+    color: white;
 }
 
 // TEXT COLORS
 
-.primary-c {
+.primary-text {
     color:$primary;
 }
 
-.secondary-c {
+.secondary-text {
     color:$secondary;
+}
+.darker-grey-text {
+    color:$darker-grey;
+}
+
+.dark-grey-text {
+    color:$dark-grey;
+}
+
+.medium-grey-text {
+    color:$medium-grey;
+}
+
+.grey-text {
+    color:$grey;
+}
+
+.light-grey-text {
+    color:$light-grey;
+}
+
+.lighter-grey-text {
+    color:$lighter-grey;
+}
+
+.success-text {
+    color:$success;      
+}
+
+.danger-text {
+    color:$danger;         
+}
+
+.warning-text {
+    color:$warning;          
+}
+
+.info-text {
+    color:$info;          
+}
+
+.disabled-text {
+    color:$disabled;      
+}
+
+.white-text {
+    color: white;
 }

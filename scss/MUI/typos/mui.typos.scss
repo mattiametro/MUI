@@ -15,6 +15,22 @@ html, body {
     font-size: $base-font-size;    
 }
 
+.fs--more {
+   font-size: $base-font-size + 2; 
+} 
+
+.fs--less {
+   font-size: $base-font-size - 2; 
+}
+
+.fs--large {
+   font-size: $base-font-size + 4; 
+} 
+
+.fs--small {
+   font-size: $base-font-size - 4; 
+}
+
 .fc {
     color: $base-font-color;    
 }
@@ -46,3 +62,4 @@ h6, .h6 {
 small, .small {
     font-size:11px;
 }
+

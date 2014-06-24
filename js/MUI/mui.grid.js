@@ -8,7 +8,6 @@
 
 (function($) {
     $.fn.mui_grid = function() {
-           $(this).css('width','100%');
             var len = $(this).length,
                 len = len - 1;
             for (var i = 0; i <= len; i++) {

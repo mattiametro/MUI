@@ -32,7 +32,7 @@ $padding-double: $padding * 2; // .padding-double
 /**** BASE FONT SETTINGS ****/
 
 $base-font-family:    'Open Sans', 'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;  // .ff
-$base-font-size:      16px;  // .fs
+$base-font-size:      14px;  // .fs
 $base-font-color:     #555555; // .fc
 $button-font-family:  'Open Sans', 'Helvetica', 'Helvetica Neue', 'Lucida Sans', Arial, Sans-serif;   
 
@@ -82,14 +82,16 @@ $button-text: #FFF;
 
 /* action buttons */
 
-$good:   forestgreen;
-$bad:    crimson;
-$obs:    gold;
-$promo:  royalblue;
+$success:   #3fd150;
+$danger:    #ec533f;
+$warning:   #f3bd01;
+$info:      #4196de;
+$disabled:  $light-grey;
+$special:   #21eea3;
 
 /**** BORDER RADIUS ****/
 
-$radius: 2px;
+$radius: 3px;
 
 
 
