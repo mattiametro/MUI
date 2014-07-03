@@ -1,0 +1,50 @@
+// Tooltips .tooltip + data-tooltip=""
+
+.tooltip { 
+    position: relative; 
+    cursor: pointer; 
+    overflow:visible; 
+}
+
+.tooltip:after { 
+    display: block; 
+    background: $info; 
+    border: 1px solid $info; 
+    border-bottom: 0; 
+    @extend .radius;
+    padding: 4px 8px; 
+    width: auto; 
+    min-width: 100px; 
+    max-width: 500px; 
+    position: absolute; 
+    left: 0; 
+    bottom: 101%; 
+    margin-bottom: 5px; 
+    text-align: left; 
+    color: white; 
+    content: attr(data-tooltip);   
+    @extend .trns; 
+    @include vendor(opacity, 0);
+    pointer-events: none;
+    z-index:9999;
+}
+
+.tooltip:before { 
+    content: ''; 
+    width: 0; 
+    height: 0; 
+    position: absolute; 
+    bottom: 101%; 
+    left: 8px; 
+    border-top: 9px solid $info !important; 
+    border-left: 9px solid transparent; 
+    border-right: 9px solid transparent; 
+    @include vendor(opacity, 0); 
+    pointer-events: none; 
+    z-index:9999;
+}
+
+.tooltip:hover:after, .tooltip:hover:before { 
+    @extend .trns; 
+    @include vendor(opacity, 1);
+}
