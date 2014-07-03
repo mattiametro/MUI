@@ -30,7 +30,6 @@
 
 @include floats();
 
-
 @include media-query(fullscreen){
     @include floats("fullscreen-");
 }

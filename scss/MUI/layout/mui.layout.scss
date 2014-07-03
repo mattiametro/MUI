@@ -32,6 +32,6 @@
 
 .content-block {
    @extend .padding-double;
-   @extend .margin-v-double;
+   @extend .radius;
    background: $lighter-grey;
 }

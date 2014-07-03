@@ -1,0 +1,16 @@
+// MUI Labels .label
+
+.label {
+    display:inline-block;
+    padding:3px 5px;
+    background-color: $primary;
+    color: white;
+    @extend .radius;
+}
+
+.label--full {
+    @extend .label;
+    width:100%;
+    text-align:center;
+}
+

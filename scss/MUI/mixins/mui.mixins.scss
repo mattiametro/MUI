@@ -51,3 +51,9 @@ $tablet-start:     $handheld + 1px;
     }
     
 }
+
+@mixin handheld { @include media-query(handheld) { @content }; }
+@mixin tablet { @include media-query(tablet) { @content }; }
+@mixin to-tablet { @include media-query(to-tablet) { @content }; }
+@mixin to-laptop { @include media-query(to-laptop) { @content }; }
+@mixin laptop { @include media-query(laptop) { @content }; }

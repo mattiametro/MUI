@@ -58,6 +58,7 @@
 
 .mui-naver.enabled .naver-container * li a {
     background-color: $mui-naver-button;
+    @include vendor(border-radius, 0px);
 }
 
 .mui-naver.enabled .naver-container * li:nth-of-type(even) a {
